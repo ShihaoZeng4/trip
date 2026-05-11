@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Kyoto Early Summer Trip</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Garamond', serif;
+            background-color: #f5f1ed;
+            color: #333;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #f5f1ed 0%, #ede8e3 100%);
+            padding: 80px 60px;
+            text-align: center;
+            border-bottom: 2px solid #d4cfc8;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-style: italic;
+            margin-bottom: 10px;
+            color: #2c2c2c;
+            font-weight: 400;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            min-height: calc(100vh - 300px);
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 60px;
+            background: #faf8f5;
+        }
+
+        .sidebar {
+            width: 300px;
+            padding: 60px 40px;
+            background: #f5f1ed;
+            border-left: 2px solid #d4cfc8;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .sidebar-title {
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            display: block;
+            font-family: 'Arial', sans-serif;
+            font-weight: normal;
+        }
+
+        .sidebar-item {
+            font-size: 0.9rem;
+            margin-bottom: 18px;
+            cursor: pointer;
+            transition: color 0.3s;
+            color: #666;
+            text-decoration: none;
+            display: block;
+            letter-spacing: 1px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .sidebar-item:hover {
+            color: #b8860b;
+        }
+
+        .day-card {
+            margin-bottom: 80px;
+            border-left: 4px solid #d4a574;
+            padding-left: 30px;
+        }
+
+        .day-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c2c2c;
+        }
+
+        .day-date {
+            font-size: 0.9rem;
+            color: #999;
+            margin-bottom: 20px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .day-location {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #2c2c2c;
+        }
+
+        .itinerary-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .itinerary-item {
+            padding: 8px 0;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .time {
+            color: #b8860b;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background-color: #fef3e0;
+            padding: 20px;
+            border-left: 4px solid #b8860b;
+            margin: 40px 0;
+            font-style: italic;
+            color: #666;
+        }
+
+        footer {
+            background: #e8e3dc;
+            padding: 40px 60px;
+            text-align: center;
+            border-top: 2px solid #d4cfc8;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .reset-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: none;
+            border: none;
+            color: #999;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            cursor: pointer;
+            font-family: 'Arial', sans-serif;
+            transition: color 0.3s;
+        }
+
+        .reset-btn:hover {
+            color: #333;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                border-left: none;
+                border-top: 2px solid #d4cfc8;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .sidebar-item {
+                margin-right: 20px;
+                display: inline-block;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .main-content {
+                padding: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>2026 Kyoto Early Summer Trip</h1>
+        <p class="subtitle">May 14 – 18</p>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <!-- Day 1 -->
+            <div class="day-card">
+                <div class="day-title">01 DAY · May 14</div>
+                <div class="day-location">🏯 Shijo & Eastern Kyoto</div>
+                <ul class="itinerary-list">
+                    <li class="itinerary-item"><span class="time">10:00</span> → Check-in & drop bag at Shijo capsule hotel</li>
+                    <li class="itinerary-item"><span class="time">10:30</span> → Yasaka Shrine (quiet morning visit, skip crowds)</li>
+                    <li class="itinerary-item"><span class="time">11:30</span> → Maruyama Park → walk to Chion-in (massive wooden gate, quiet gardens)</li>
+                    <li class="itinerary-item"><span class="time">13:00</span> → Lunch at Shoren-in area (matcha soba or yudofu)</li>
+                    <li class="itinerary-item"><span class="time">14:00</span> → Shoren-in Temple → Konchi-in → Nanzen-ji (rock garden)</li>
+                    <li class="itinerary-item"><span class="time">16:00</span> → Eikan-do Temple → Philosopher's Path (golden hour walk)</li>
+                    <li class="itinerary-item"><span class="time">Evening</span> → Return to Shijo → night walk in Gion & Shirakawa River</li>
+                </ul>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="day-card">
+                <div class="day-title">02 DAY · May 15</div>
+                <div class="day-location">🌸 Southern Higashiyama & Traditional Kyoto</div>
+                <ul class="itinerary-list">
+                    <li class="itinerary-item"><span class="time">07:30</span> → Early start to Kiyomizu-dera (beat crowds)</li>
+                    <li class="itinerary-item"><span class="time">09:30</span> → Sannenzaka & Ninenzaka (stroll, pottery shops)</li>
+                    <li class="itinerary-item"><span class="time">11:00</span> → Kodai-ji Temple (zen gardens & bamboo grove)</li>
+                    <li class="itinerary-item"><span class="time">12:30</span> → Lunch in Gion area (kaiseki or sushi lunch set)</li>
+                    <li class="itinerary-item"><span class="time">14:00</span> → Kyoto Gyokuen (traditional tea ceremony experience)</li>
+                    <li class="itinerary-item"><span class="time">16:00</span> → Shimogamo Shrine → Kamigamo Shrine (ancient architecture)</li>
+                    <li class="itinerary-item"><span class="time">Evening</span> → Walk back to Shijo along Kamogawa River (riverbank sunset)</li>
+                </ul>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="day-card">
+                <div class="day-title">03 DAY · May 16</div>
+                <div class="day-location">🚂 Uji & Nara Day Trip</div>
+                <ul class="itinerary-list">
+                    <li class="itinerary-item"><span class="time">08:00</span> → Train to Uji (20 mins from Kyoto Station)</li>
+                    <li class="itinerary-item"><span class="time">09:00</span> → Byodo-in Temple (Phoenix Hall, UNESCO)</li>
+                    <li class="itinerary-item"><span class="time">10:30</span> → Ujigami Shrine (oldest Shinto shrine in Japan)</li>
+                    <li class="itinerary-item"><span class="time">11:30</span> → Matcha lunch & tea tasting at Nakamura Tokichi</li>
+                    <li class="itinerary-item"><span class="time">13:00</span> → Train to Nara (45 mins)</li>
+                    <li class="itinerary-item"><span class="time">14:00</span> → Todai-ji Temple (giant Buddha statue) → Nara Park (deer feeding)</li>
+                    <li class="itinerary-item"><span class="time">16:00</span> → Kasuga Taisha (thousands of stone lanterns)</li>
+                    <li class="itinerary-item"><span class="time">17:30</span> → Train back to Kyoto</li>
+                    <li class="itinerary-item"><span class="time">Evening</span> → Optional night stroll in Nishiki Market (street food)</li>
+                </ul>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="day-card">
+                <div class="day-title">04 DAY · May 17</div>
+                <div class="day-location">🎋 Arashiyama & Western Kyoto</div>
+                <ul class="itinerary-list">
+                    <li class="itinerary-item"><span class="time">08:30</span> → Train to Arashiyama (15 mins from Kyoto Station)</li>
+                    <li class="itinerary-item"><span class="time">09:30</span> → Otagi Nenbutsu-ji Temple (1200 stone statues, quiet hillside)</li>
+                    <li class="itinerary-item"><span class="time">11:00</span> → Bamboo Grove (early visit, minimal crowds) → Tenryu-ji Temple</li>
+                    <li class="itinerary-item"><span class="time">12:30</span> → Lunch in Arashiyama (tempura or yudofu)</li>
+                    <li class="itinerary-item"><span class="time">14:00</span> → Nonomiya Shrine (purification ritual) → Togetsukyo Bridge</li>
+                    <li class="itinerary-item"><span class="time">16:00</span> → Optional: Iwatayama Monkey Park or Arashiyama Monkey Park</li>
+                    <li class="itinerary-item"><span class="time">17:30</span> → Train back to Kyoto</li>
+                    <li class="itinerary-item"><span class="time">Evening</span> → Relax at Kyoto Station → rooftop sunset view</li>
+                </ul>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="day-card">
+                <div class="day-title">05 DAY · May 18</div>
+                <div class="day-location">✈️ Final Morning & Departure</div>
+                <ul class="itinerary-list">
+                    <li class="itinerary-item"><span class="time">07:30</span> → Morning run/walk along Kamogawa River</li>
+                    <li class="itinerary-item"><span class="time">09:00</span> → Brunch in Nishiki Market area (tamagoyaki, sushi rolls)</li>
+                    <li class="itinerary-item"><span class="time">10:30</span> → Pack & check out of hotel</li>
+                    <li class="itinerary-item"><span class="time">11:30</span> → Bus from Shijo to Kansai International Airport (1hr)</li>
+                    <li class="itinerary-item"><span class="time">14:20</span> → Departure flight back to Tokyo</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                ※ A trip is not over when the wheels touch down. It is over when every receipt has either become a refund or become an accepted loss. The honest window for the first half of that work is the first two weeks. The rest is reminiscence.
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <span class="sidebar-title">Navigation</span>
+            <a href="#day1" class="sidebar-item">— DAY 1</a>
+            <a href="#day2" class="sidebar-item">— DAY 2</a>
+            <a href="#day3" class="sidebar-item">— DAY 3</a>
+            <a href="#day4" class="sidebar-item">— DAY 4</a>
+            <a href="#day5" class="sidebar-item">— DAY 5</a>
+            <a href="#info" class="sidebar-item">— TIPS</a>
+            <a href="#map" class="sidebar-item">— MAP</a>
+            <a href="#budget" class="sidebar-item">— BUDGET</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>2026 Kyoto Early Summer Trip · May 14 – 18 · Curated by ShihaoZeng4</p>
+    </footer>
+
+    <button class="reset-btn" onclick="window.scrollTo(0, 0)">⟲ BACK TO TOP</button>
+</body>
+</html>
